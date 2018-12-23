@@ -12,12 +12,11 @@
 
 5. Clone this repo: `git clone [repo URL]`
 
-*_WIP_*
-6. Create the DRL Workspace vm for the first time
-  - `bash create_workspace.sh`
 
-7. Access the instance: `gcloud compute ssh %INSTANCE_NAME%`
+**_WIP_**
+
+6. Create the DRL Workspace vm for the first time
+
+7. Access the instance
 
 8. Start and stop the workspace as needed
-  - `bash start_workspace.sh`
-  - `bash stop_workspace.sh`
