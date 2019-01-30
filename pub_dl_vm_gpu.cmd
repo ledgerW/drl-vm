@@ -1,7 +1,7 @@
 SET IMAGE_FAMILY=ubuntu-1804-lts
 SET ZONE=us-west1-b
 SET INSTANCE_NAME=drl-workspace-gpu
-SET INSTANCE_TYPE=n1-standard-8
+SET INSTANCE_TYPE=n1-standard-4
 
 gcloud compute instances create %INSTANCE_NAME% ^
 --zone=%ZONE% ^
@@ -10,5 +10,5 @@ gcloud compute instances create %INSTANCE_NAME% ^
 --maintenance-policy=TERMINATE ^
 --accelerator="type=nvidia-tesla-v100,count=1" ^
 --machine-type=%INSTANCE_TYPE% ^
---boot-disk-size=400GB ^
+--boot-disk-size=200GB ^
 --metadata="install-nvidia-driver=True"
