@@ -12,4 +12,4 @@ gcloud compute instances create %INSTANCE_NAME% ^
 --machine-type=%INSTANCE_TYPE% ^
 --boot-disk-size=200GB ^
 --metadata="install-nvidia-driver=True" ^
---metadata-from-file startup.sh
+--metadata-from-file startup-script=startup.sh
