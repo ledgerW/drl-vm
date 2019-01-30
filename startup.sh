@@ -28,8 +28,8 @@ cd Horizon/
 
 # Install Horizon dependencies (and Jupyter)
 conda install -y --file docker/requirements.txt
-conda install jupyter
-conda install jupyterlab
+conda install -y jupyter
+conda install -y jupyterlab
 
 # Install ONNX
 pip install onnx
